@@ -1,0 +1,33 @@
+{
+  "name": "d3code",
+  "source_csv": "datasets/d3code/d3code_complete.csv",
+  "split_csv_pattern": "datasets/d3code/d3code_split_{split_mode}.csv",
+  "split_column": "split",
+  "split_by_annotator": "annotator_id",
+  "split_by_item": "item_id",
+  "annotator_col": "annotator_id",
+  "item_col": "item_id",
+  "label_col": "offensive",
+  "label_map": {"0": 0, "1": 1},
+  "label_names": ["0", "1"],
+  "text_fields": ["comment_text"],
+  "meta_col_map": {
+    "Age": "Age",
+    "Gender": "Gender",
+    "Region": "Region",
+    "Country": "Country",
+    "SES": "SES"
+  },
+  "continuous_meta_cols": {
+    "care": "Care",
+    "equality": "Equality",
+    "proportionality": "Proportionality",
+    "authority": "Authority",
+    "loyalty": "Loyalty",
+    "purity": "Purity"
+  },
+  "continuous_meta_range": [1.0, 5.0],
+  "include_annotator_id_onehot": false,
+  "ail_prefix": "d3code",
+  "required_columns": ["annotator_id", "item_id", "offensive", "comment_text"]
+}

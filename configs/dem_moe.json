@@ -1,0 +1,19 @@
+{
+  "n_epoch": 5,
+  "batch_size": 256,
+  "lr": 5e-4,
+  "num_experts": 8,
+  "top_k": 3,
+  "ann_embed_dim": 128,
+  "id_embed_dim": 64,
+  "expert_hidden_dim": 256,
+  "dropout": 0.2,
+  "kl_weight": 1e-3,
+  "load_weight": 0.1,
+  "ortho_weight": 0.05,
+  "var_weight": 0.05,
+  "phase_a_epochs": 10,
+  "phase_b_epochs": 10,
+  "phase_c_epochs": 10,
+  "use_class_weights": true
+}

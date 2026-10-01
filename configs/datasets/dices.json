@@ -1,0 +1,24 @@
+{
+  "name": "dices",
+  "source_csv": "../dices/datasets/dices/dices.csv",
+  "split_csv_pattern": "../dices/datasets/dices/dices_split_{split_mode}.csv",
+  "split_column": "split",
+  "split_by_annotator": "rater_id",
+  "split_by_item": "item_id",
+  "annotator_col": "rater_id",
+  "item_col": "item_id",
+  "label_col": "Q_overall",
+  "label_map": {"No": 0, "Unsure": 1, "Yes": 2},
+  "label_names": ["No", "Unsure", "Yes"],
+  "text_fields": ["context", "response"],
+  "meta_col_map": {
+    "rater_gender": "Gender",
+    "rater_locale": "Locale",
+    "rater_race": "Race",
+    "rater_age": "Age",
+    "rater_education": "Education"
+  },
+  "include_annotator_id_onehot": false,
+  "ail_prefix": "dices",
+  "required_columns": ["rater_id", "item_id", "Q_overall", "context", "response"]
+}

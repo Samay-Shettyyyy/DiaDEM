@@ -1,0 +1,36 @@
+{
+  "llm_gemma4": {
+    "hf_id": "google/gemma-4-26B-A4B-it",
+    "display_name": "Gemma-4-26B-A4B-IT",
+    "max_new_tokens": 16,
+    "temperature": 0.0,
+    "dtype": "bfloat16",
+    "trust_remote_code": true
+  },
+  "llm_gpt_oss": {
+    "hf_id": "openai/gpt-oss-20b",
+    "display_name": "GPT-OSS-20B",
+    "max_new_tokens": 16,
+    "temperature": 0.0,
+    "dtype": "bfloat16",
+    "trust_remote_code": true
+  },
+  "llm_qwen8b": {
+    "hf_id": "Qwen/Qwen3-8B",
+    "display_name": "Qwen3-8B",
+    "max_new_tokens": 16,
+    "temperature": 0.0,
+    "dtype": "bfloat16",
+    "trust_remote_code": true,
+    "disable_thinking": true
+  },
+  "llm_deepseek": {
+    "hf_id": "deepseek-ai/DeepSeek-V4-Flash",
+    "display_name": "DeepSeek-V4-Flash",
+    "max_new_tokens": 16,
+    "temperature": 0.0,
+    "dtype": "bfloat16",
+    "trust_remote_code": true,
+    "note": "Large MoE (~284B / 13B active). Prefer multi-GPU or set LLM_API_BASE to a vLLM/OpenAI endpoint."
+  }
+}

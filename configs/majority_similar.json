@@ -1,0 +1,16 @@
+{
+  "min_cat_matches": 2,
+  "top_k": 25,
+  "use_continuous": true,
+  "continuous_weight": 1.0,
+  "categorical_features": ["Age", "Gender", "Region", "Country", "SES"],
+  "continuous_features": [
+    "Care",
+    "Equality",
+    "Proportionality",
+    "Authority",
+    "Loyalty",
+    "Purity"
+  ],
+  "note": "For each test (item, annotator), plurality-vote TRAIN annotators on the same item with the most matching demographics. Fallback: all-train item plurality, then global train plurality."
+}

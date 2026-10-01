@@ -1,0 +1,18 @@
+{
+  "n_epoch": 200,
+  "batch_size": 200,
+  "save_every": 10,
+  "eval_every": 10,
+  "act_fx": "softsign",
+  "weight_init_scheme": "gaussian",
+  "lat_fusion_type": "concat",
+  "lat_dim": 128,
+  "lat_i_dim": 128,
+  "lat_a_dim": 64,
+  "gamma_i": 0.0,
+  "gamma_a": 0.0,
+  "learning_rate": 0.002,
+  "drop_p": 0.5,
+  "opt_type": "adam",
+  "update_radius": -2.0
+}

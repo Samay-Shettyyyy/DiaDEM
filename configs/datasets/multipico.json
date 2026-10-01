@@ -1,0 +1,7 @@
+{
+  "name": "multipico",
+  "label_names": ["Not offensive", "Offensive"],
+  "ail_prefix": "multipico",
+  "split_name_map": {"test": "test", "train": "train"},
+  "_note": "MultiPICo binary offensiveness dataset. npy data seeded from Mutlipico/experimental_data/mp. AIL labels converted from one-hot strings to int during seed step."
+}

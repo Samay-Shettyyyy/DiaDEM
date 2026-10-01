@@ -1,0 +1,24 @@
+{
+  "name": "voiced",
+  "source_csv": "../voices/datasets/voiced/voiced_complete.csv",
+  "split_csv_pattern": "../voices/datasets/voiced/voiced_split_{split_mode}.csv",
+  "split_column": "split",
+  "split_by_annotator": "annotator_id",
+  "split_by_item": "comment_id",
+  "annotator_col": "annotator_id",
+  "item_col": "comment_id",
+  "label_col": "PERSON_TOXIC",
+  "label_map": {"0": 0, "1": 1},
+  "label_names": ["0", "1"],
+  "text_fields": ["comment_text"],
+  "meta_col_map": {
+    "gender": "Gender",
+    "race": "Race",
+    "age": "Age",
+    "education": "Education",
+    "annotator_political": "PoliticalAffiliation"
+  },
+  "include_annotator_id_onehot": true,
+  "ail_prefix": "voiced",
+  "required_columns": ["annotator_id", "comment_id", "PERSON_TOXIC", "comment_text"]
+}

@@ -1,0 +1,12 @@
+tensorflow>=2.10
+numpy
+pandas
+scikit-learn
+sentence-transformers
+tqdm
+scipy
+torch
+transformers>=4.45
+accelerate
+openai
+openpyxl
